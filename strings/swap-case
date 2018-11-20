@@ -1,0 +1,5 @@
+#given a string 
+#swap case - convert all lowercase to uppercase and vice versa
+
+str = input()
+print(str.swapcase())
