@@ -1,1 +1,7 @@
-print(*range(1,int(input())+1), sep="")
+#read an integer n
+#without using any string methods try to print 123.....n
+
+if __name__ == '__main__':
+    n = int(input())
+
+    print(*range(1,n+1), sep="")
