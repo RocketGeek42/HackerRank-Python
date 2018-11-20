@@ -1,0 +1,8 @@
+#read a given string 
+#change the character at a given index
+#print the modified string.
+
+s = list(input())
+i, l = input().split()
+s[int(i)] = l
+print("".join(s))
