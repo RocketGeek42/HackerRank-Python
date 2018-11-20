@@ -1,0 +1,18 @@
+#record of N students
+#each record contains name, percents in math, physics and chemistry
+#percents can be floating numbers
+#user enters some integer N followed by names and markes for N students
+#save the record in a dictionary type
+#user then enters a students' name
+#output the average percentage obtained by that student correct to two decimal places
+
+if __name__ == '__main__':
+    n = int(input())
+    student_marks = {}
+    for i in range(n):
+        name, *line = input().split()
+        scores = list(map(float, line))
+        student_marks[name] = scores
+    query_name = input()
+    query_scores = student_marks[query_name]
+    print("{0:.2f}".format(sum(query_scores)/(len(query_scores))))
