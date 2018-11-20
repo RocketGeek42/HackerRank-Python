@@ -1,10 +1,16 @@
-n=int(input())
+#given an integer n
+#if n is odd, print Weird
+#if n is even and in the inclusive range 2 to 5, print Not Weird
+#if n is even and in the inclusive range 6 to 20, print Weird
+#if n is greater than 20, print Not Weird
+
+n = int(input())
 
 if(n%2)==1:
-  print "Wierd"
+  print("Weird")
 elif(n%2)==0 and n in range(2,6):
-    print "Not Wierd"
+    print("Not Weird")
 elif(n%2)==0 and n in range(2,21):
-    print "Wierd"
+    print("Weird")
 elif(n%2)==0 and n>20:
-    print "Not Wierd"
+    print("Not Weird")
