@@ -1,0 +1,20 @@
+#user enters a string and a substring
+#print the number of times the substring occurs in the given string
+#string transversal will take place from left to right, not from right to left.
+
+string = input()
+sub_string = input()
+count = 0
+for i in range(0, len(string)):
+    if string[i:].startswith(sub_string):
+        count += 1
+print (count)
+
+
+if __name__ == '__main__':
+    string = input().strip()
+    sub_string = input().strip()
+
+    count = count_substring(string, sub_string)
+    print (count)
+    main()
