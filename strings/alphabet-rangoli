@@ -1,0 +1,20 @@
+#you are given an integer N
+#print an alphabet rangoli of size N
+
+import string
+N = int(input())
+M = string.ascii_lowercase
+
+for i in range(N-1, 0, -1):
+    row = ['-']*(N*2-1)
+    for j in range(0, N-i):
+        row[N-1-j] = M[j+i]
+        row[N-1+j] = M[j+i]
+    print('-'.join(row))
+
+for i in range(0, N):
+    row = ['-']*(N*2-1)
+    for j in range(0, N-i):
+        row[N-1-j] = M[j+i]
+        row[N-1+j] = M[j+i]
+    print('-'.join(row))
