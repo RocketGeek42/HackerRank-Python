@@ -1,0 +1,9 @@
+#you are given a string 
+#split the string on a " " (space) delimiter
+#join using a hyphen
+#print result 
+
+a = input()
+a = a.split(" ")
+a = "-".join(a)
+print(a)
