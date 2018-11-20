@@ -1,0 +1,11 @@
+#given the participants' score sheet for your University Sports Day
+#you are required to find the runner up score
+#you are given n scores
+#store them in a list and find the score of the runner up
+
+if __name__ == '__main__':
+    n = int(input())
+    list = list(set(map(int, input().strip().split(" "))))
+    list.sort(reverse=True)
+
+    print(list[1])
